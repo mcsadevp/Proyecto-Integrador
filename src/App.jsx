@@ -4,7 +4,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
-// rama mati
+
 function App() {
   return (
     <>
