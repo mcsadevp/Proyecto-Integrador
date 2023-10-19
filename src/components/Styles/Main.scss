@@ -1,0 +1,146 @@
+.index {
+  background-color: #fae8a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .div {
+  background-color: #fae8a6;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.index .overlap {
+  height: 336px;
+  left: 0;
+  position: absolute;
+  top: 661px;
+  width: 1440px;
+}
+
+.index .rectangle {
+  background-color: #312525;
+  height: 263px;
+  left: 0;
+  position: absolute;
+  top: 37px;
+  width: 1440px;
+}
+
+.index .element {
+  height: 336px;
+  left: 869px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 522px;
+}
+
+.index .rectangle-2 {
+  background-color: #00ffc1;
+  border-radius: 20px;
+  height: 177px;
+  left: 77px;
+  position: absolute;
+  top: 75px;
+  width: 727px;
+}
+
+.index .encuentra-el {
+  color: #000000;
+  font-family: "Rubik", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 109px;
+  width: 675px;
+}
+
+.index .overlap-group {
+  height: 362px;
+  left: 0;
+  position: absolute;
+  top: 206px;
+  width: 1440px;
+}
+
+.index .img {
+  height: 263px;
+  left: 0;
+  position: absolute;
+  top: 52px;
+  width: 1440px;
+}
+
+.index .rectangle-3 {
+  background-color: #00ffc1;
+  border-radius: 20px;
+  height: 177px;
+  left: 618px;
+  position: absolute;
+  top: 95px;
+  width: 727px;
+}
+
+.index .perm-tenos-guiarte-a {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 644px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 81px;
+  width: 675px;
+}
+
+.index .text-wrapper {
+  font-weight: 700;
+}
+
+.index .span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.index .text-wrapper-2 {
+  font-family: "Rubik", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.index .element-mxiwtjl {
+  height: 362px;
+  left: 76px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 442px;
+}
+.index .perm-tenos-guiarte-a {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 644px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 675px;
+}
+
+.col {
+  flex: 1 0 0%;
+  padding: 0;
+}

@@ -1,0 +1,167 @@
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Avatar from "../assets/Avatar.jpg";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Logo from "../assets/Frame3.png";
+import Hospital from "../assets/Hospital.png";
+import { useState, useEffect } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+
+const user = {
+  avatar: Avatar,
+  correo: "giovanni.alamosc@gmail.com",
+  nombre: "Giovanni",
+  token: "123",
+};
+
+function Header() {
+  const [userdata, setUserdata] = useState({});
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(!show);
+  const handleLogin = () => {
+    setUserdata(user);
+    handleShow();
+  };
+  useEffect(() => {}, []);
+
+  return (
+    <Navbar
+      style={{ background: `url(${Hospital})`, backgroundSize: "contain" }}
+      collapseOnSelect
+      expand="lg"
+      className="custom-navbar"
+    >
+      <Container>
+        <Navbar expand="lg">
+          <Navbar.Brand href="#home">
+            <img
+              src={Logo}
+              alt="Logo"
+              className="Logo"
+              data-bs-toggle="collapse"
+              data-bs-target="#responsive-navbar-nav"
+            />
+          </Navbar.Brand>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">{}</Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>{" "}
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>{" "}
+            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <div className="space"></div>
+          {/* //operador ternario */}
+          {userdata.nombre ? (
+            <img src={Avatar} alt="Avatar" className="navbar_avatar" />
+          ) : (
+            <Button variant="primary" onClick={handleShow}>
+              Login
+            </Button>
+          )}
+          <Modal show={show} onHide={handleShow}>
+            <Modal.Header closeButton>
+              <Modal.Title>Login</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="name@example.com"
+                    autoFocus
+                  />
+                </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control
+                    type="password"
+                    placeholder="ingresa password"
+                    autoFocus
+                  />
+                </Form.Group>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleShow}>
+                Cancelar
+              </Button>
+              <Button variant="primary" onClick={handleLogin}>
+                Login
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default Header;

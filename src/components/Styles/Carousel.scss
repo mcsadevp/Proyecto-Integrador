@@ -1,0 +1,71 @@
+.CarouselFull {
+  justify-content: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  width: 1200px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.Carousel {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center !important;
+  flex-wrap: nowrap;
+}
+
+.Carouseleft {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap;
+}
+
+.Carouselrigth {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap;
+}
+
+.Carousel,
+.Carouseleft,
+.Carouselrigth {
+  flex: 1;
+  max-width: calc(32%);
+  margin: 0px;
+  box-sizing: border-box;
+  margin-left: -1vh;
+}
+
+.imgcarousel {
+  width: 100%;
+  background-color: blue;
+  display: contents;
+  justify-content: center;
+  object-fit: fill;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0;
+}
+
+.carouselimg {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  max-width: 31vw;
+  max-height: 150vh;
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 0;
+  height: auto;
+  background: transparent;
+  border: none;
+}

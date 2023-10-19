@@ -1,0 +1,15 @@
+// abstracts
+@use "./Scss/abstracts/variables";
+@use "./Scss/abstracts/mixins_";
+
+// base
+
+@use "./Scss/base/base";
+@use "./Scss/base/resets";
+@use "./App.scss";
+
+//components
+@use "./components/Styles/NavBar.scss";
+@use "./components/Styles/Carousel.scss";
+@use "./components/Styles/Main.scss";
+@use "./components/Styles/Card.scss";
