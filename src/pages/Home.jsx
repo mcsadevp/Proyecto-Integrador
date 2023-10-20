@@ -1,7 +1,7 @@
 import CardCM from "../components/CardCM";
-import Carrousel from "../components/Carrousel";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 const app2 = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -66,7 +66,7 @@ function Home() {
             />
           </div>
         ))}
-      <Carrousel />
+      
     </>
   );
 }
