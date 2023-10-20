@@ -1,6 +1,5 @@
-import Carrousel from "../components/Carrousel";
 import CardCM from "../components/CardCM";
-// rama mati
+import Carrousel from "../components/Carrousel";
 import { useEffect, useState } from "react";
 import axios from "axios";
 const app2 = () => {
@@ -67,7 +66,6 @@ function Home() {
             />
           </div>
         ))}
-
       <Carrousel />
     </>
   );
