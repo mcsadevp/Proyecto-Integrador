@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <Header />
-
       <Main>
         <Home />
       </Main>

@@ -1,10 +1,10 @@
 .navbar {
-  height: 10vh;
+  height: auto; /* Cambia la altura a "auto" para que se ajuste al contenido */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Alinea el contenido en los extremos */
   align-items: center;
   margin-right: auto;
-  max-width: 100%;
+  padding: 10px;
 }
 
 @media (min-width: 1201px) {
@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 991px) {
-  navbar-brand {
+  .navbar-brand {
     align-items: center;
     display: flex;
     text-align: center;
@@ -28,11 +28,11 @@
 }
 
 .navbar-brand {
-  align-items: center;
   display: flex;
+  align-items: center;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0; /* Elimina los márgenes para el logo */
+  padding: 0;
 }
 
 @media (min-width: 1201px) {
@@ -53,12 +53,12 @@
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .Logo {
     margin-top: 4vh;
     height: 80%;
-    width: 80%;
-    margin-right: 50vh;
+    width: 100%; /* Cambia el ancho al 100% para que se ajuste automáticamente */
+    max-width: 100%; /* Agrega esto para limitar el ancho */
     display: flex;
     pointer-events: none;
   }
@@ -68,12 +68,15 @@
   .Logo {
     text-align: center; /* Centra horizontalmente */
     vertical-align: middle; /* Centra verticalmente */
-    margin-top: 4vh;
-    height: 80%;
-    width: 80%;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    padding: 30px;
+    width: 100%; /* Cambia el ancho al 100% para que se ajuste automáticamente */
+    max-width: 100%; /* Agrega esto para limitar el ancho */
+    height: 200px;
+    overflow: hidden;
   }
 }
 
@@ -228,9 +231,9 @@
 //Barra navbar desplegable
 @media (max-width: 991px) {
   .navbar-nav {
-    position: relative;
-    text-align: center;
-    margin-top: 20vw;
+    flex-direction: column; /* Apila los elementos del menú verticalmente */
+    text-align: center; /* Centra horizontalmente el contenido */
+    margin-top: 20px; /* Ajusta este valor según tus necesidades */
   }
 }
 
@@ -240,6 +243,12 @@
     text-align: center;
     margin-top: 25vw;
   }
+}
+.navbar .nav-item {
+  margin: 10px 0; /* Ajusta los márgenes de los elementos del menú */
+}
+.navbar .nav-link {
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
 }
 
 .nav-link.active, //menu desplegable
